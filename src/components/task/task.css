@@ -6,6 +6,7 @@
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .buttons{
@@ -25,4 +26,11 @@ button:first-child{
     border: 0;
     border-bottom: 1px solid black;
     width: 30%;
+    font-size: larger;
 }
+
+input.edit:focus{
+    border-color: black !important;
+}
+
+

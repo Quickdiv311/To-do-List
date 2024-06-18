@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className='home'>
       <form onSubmit={e => submit(e)}>
-        <input type="text" placeholder='task' className="form-control mb-3" value={task.value} onChange={e => inputChange(e)}/>
+        <input type="text" placeholder='task' className="add form-control mb-3" value={task.value} onChange={e => inputChange(e)}/>
         <button className="btn btn-success">Add Task</button>
       </form>
     </div>

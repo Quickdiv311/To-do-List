@@ -20,7 +20,7 @@ const Task = ({task}) => {
 
   return (
     <div className='task'>
-       {!edit ? <h3>{task.value}</h3> : <input type='text' className='edit' value={newTask.value} onChange={e => setNewTask({...newTask, value: e.target.value})}/>}
+       {!edit ? <h5>{task.value}</h5> : <input type='text' className='edit' value={newTask.value} onChange={e => setNewTask({...newTask, value: e.target.value})}/>}
        <div className='buttons'>
           <button className="btn btn-danger" onClick={() => {dispacher("delete", task)}}>Delete</button>
           {edit ?

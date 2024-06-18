@@ -2,3 +2,21 @@
     margin: 5% auto;
     width: 40vw;
 }
+
+input.add::-webkit-input-placeholder{
+    font-size: large;
+}
+
+input.add{
+    border: 1px solid gray;
+}
+
+input.form-control:focus{
+    border-radius: 0;
+}
+
+input.add:focus {
+    border: none;
+    border-bottom: 1px solid gray;
+    box-shadow: none !important;
+}
