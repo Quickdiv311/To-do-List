@@ -1,18 +1,20 @@
 import { useContext, useState } from 'react';
 import './home.css';
 import AppContext from '../../context';
+import { useDispatch } from 'react-redux';
+import { add } from '../../store/reducers/todo-store';
 
 const Home = () => {
 
   const [task, setTask] = useState({value: "", id: -1});
-  const {dispacher} = useContext(AppContext);
+  const dispatch = useDispatch();
 
   function submit(e){
        e.preventDefault();
        let newTask = {...task};
        newTask.id = Date.now().toString();
-       dispacher("add", newTask);
-       setTask({...task, value: ""});
+       dispatch(add(newTask));
+       setTask({value: "", id: -1});
   }
 
 
