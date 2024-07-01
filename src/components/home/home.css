@@ -3,6 +3,11 @@
     width: 40vw;
 }
 
+
+.home h2{
+    margin-bottom: 30px;
+}
+
 input.add::-webkit-input-placeholder{
     font-size: large;
 }

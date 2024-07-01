@@ -11,7 +11,7 @@ const List = () => {
 
   return (
     <div className='list'>
-        <h1>Tasks</h1>
+        <h2>Tasks</h2>
       {tasks.length > 0 ? tasks.map((task) => (
           <Task task={task}/>
       ))

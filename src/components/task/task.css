@@ -1,7 +1,7 @@
 .task{
     margin: 10px auto;
     width: 40vw;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 10px;
     padding: 10px 20px;
     display: flex;
