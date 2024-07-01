@@ -29,14 +29,13 @@ const Task = ({task}) => {
   }
 
   function handleChange(e){
-   setNewTask({...newTask, value: e.target.value});
+   let changededValue = e.target.value;
+   setNewTask({...newTask, value: changededValue});
 
-   if(e.target.value !== task.value){
+   if(changededValue !== task.value)
       setChanged(true);
-   }
-   else{
+   else
       setChanged(false);
-   }
   }
 
   return (
